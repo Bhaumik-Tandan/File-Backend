@@ -8,7 +8,7 @@ import { FileModule } from './file/file.module';
   imports: [
     ConfigModule.forRoot({ envFilePath: ['.env'], isGlobal: true }),
     MongooseModule.forRoot(process.env.DATABASE_URL),
-    FileModule
+    FileModule,
   ],
   controllers: [AppController],
   providers: [AppService],

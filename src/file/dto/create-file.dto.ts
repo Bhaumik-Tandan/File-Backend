@@ -1,4 +1,4 @@
 export class CreateFileDto {
-    fileName: string;
-    fileContent: string;
+  fileName: string;
+  fileContent: string;
 }
