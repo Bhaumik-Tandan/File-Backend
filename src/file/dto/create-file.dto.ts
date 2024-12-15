@@ -1,1 +1,4 @@
-export class CreateFileDto {}
+export class CreateFileDto {
+    fileName: string;
+    fileContent: string;
+}
