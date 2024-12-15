@@ -1,5 +1,5 @@
 import {
-  Controller,
+  Controller, // <-- Add this import
   Get,
   Post,
   Param,
@@ -15,6 +15,7 @@ import { CreateFileDto } from './dto/create-file.dto';
 import { FileFilterCallback } from 'multer';
 import { Express } from 'multer';
 
+@Controller('files') 
 export class FileController {
   constructor(private readonly fileService: FileService) {}
 
